@@ -1,7 +1,7 @@
 ﻿using SegundoProjeto;
 using System.ComponentModel.DataAnnotations;
 
-internal class Program
+public class Program
 {
     private static void Main(string[] args)
     {

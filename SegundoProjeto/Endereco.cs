@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SegundoProjeto
 {
-    internal class Endereco
+    public class Endereco
     {
         public string Rua {get;set;}
         public string Numero { get;set;}    

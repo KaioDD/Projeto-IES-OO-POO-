@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SegundoProjeto
 {
-    internal class Departamento
+    public class Departamento
     {
         public Departamento(string nome)
         {

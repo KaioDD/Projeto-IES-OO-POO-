@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SegundoProjeto
 {
-    internal class Curso
+    public class Curso
     {
         public string Nome {get; set;}
         public int CargarHoraria { get; set; }
