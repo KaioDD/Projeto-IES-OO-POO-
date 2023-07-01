@@ -57,6 +57,7 @@ internal class Program
 
         dptoAlimentos.RegistrarCurso(new Curso { Nome = "tecnologia em alimentos", CargarHoraria = 2000 });
 
+
         dptoAlimentos.RegistrarCurso(new Curso { Nome = "Engenharia em alimentos", CargarHoraria = 3000 } );
 
         Console.WriteLine();
@@ -69,5 +70,7 @@ internal class Program
         }
         Console.WriteLine("APerte qualquer tecla para finalizar");
         Console.ReadKey();
+
+
     }
 }
