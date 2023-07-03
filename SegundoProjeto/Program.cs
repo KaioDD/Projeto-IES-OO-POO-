@@ -3,11 +3,6 @@ using System.ComponentModel.DataAnnotations;
 
 public class Program
 {
-    private static int GetCargarHoraria()
-    {
-        return CargarHoraria;
-    }
-
     private static void Main(string[] args, int cargarHoraria)
     {
         var iesUTFPR = new Instituicao()
@@ -84,7 +79,11 @@ public class Program
 
         var ctAlimentos = new Curso() { Nome = "tecnologia em alimentos", CargarHoraria = 2000 };
 
-        if (!dptoAlimentos.Cursos.Contains(ctAlimentos)) ;
+        if (!dptoAlimentos.Cursos.Contains(ctAlimentos))
+        {
+            ;
+        }
+
         dptoAlimentos.RegistrarCurso(ctAlimentos);
      
 

@@ -11,6 +11,16 @@ namespace SegundoProjeto
     {
         public string Nome {get; set;}
         public int CargarHoraria { get; set; }
+        public HashSet<Disciplina> Disciplinas { get; } = new HashSet<Disciplina>();
+        public void RegistrarDisciplina(Disciplina d)
+        {
+            Disciplinas.Add(d);
+        }
+        public int ObterQuantidadeDisciplinasNoCurso()
+        {
+            return Disciplinas.Count; 
+        }
+
 
         public override bool Equals(object obj)
             // override = reescreve o metodo equals da classe object (SuperClasse). 
@@ -30,5 +40,6 @@ namespace SegundoProjeto
         {
             return 11 + this.Nome == null ? 0 : this.Nome.GetHashCode();
         }
+
     }
 }
