@@ -83,8 +83,10 @@ public class Program
         Console.WriteLine("o departamento de alimentos foi fechado");
 
         var ctAlimentos = new Curso() { Nome = "tecnologia em alimentos", CargarHoraria = 2000 };
-        
-        if("")
+
+        if (!dptoAlimentos.Cursos.Contains(ctAlimentos)) ;
+        dptoAlimentos.RegistrarCurso(ctAlimentos);
+     
 
     }
 }
