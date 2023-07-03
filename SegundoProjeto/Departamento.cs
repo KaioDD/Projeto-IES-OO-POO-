@@ -15,6 +15,7 @@ namespace SegundoProjeto
 
         public string Nome {get;set;}
         public IList<Curso> Cursos { get; } = new List<Curso>();
+        //Interface do tipo curso que armazena os cursos criados em uma lista que tambem é do tipo curso. 
 
         public void RegistrarCurso(Curso c)
         {

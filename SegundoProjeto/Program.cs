@@ -3,7 +3,12 @@ using System.ComponentModel.DataAnnotations;
 
 public class Program
 {
-    private static void Main(string[] args)
+    private static int GetCargarHoraria()
+    {
+        return CargarHoraria;
+    }
+
+    private static void Main(string[] args, int cargarHoraria)
     {
         var iesUTFPR = new Instituicao()
         {
@@ -71,6 +76,15 @@ public class Program
         Console.WriteLine("APerte qualquer tecla para finalizar");
         Console.ReadKey();
 
+        dptoAlimentos.FecharDepartamento();
+        dptoAlimentos = null;
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine("o departamento de alimentos foi fechado");
+
+        var ctAlimentos = new Curso() { Nome = "tecnologia em alimentos", CargarHoraria = 2000 };
+        
+        if("")
 
     }
 }
